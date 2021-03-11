@@ -1,2 +1,28 @@
 ﻿body {
 }
+
+/*#region nav*/
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: .5em 1.4em;
+}
+
+
+
+/*#endregion*/
+
+/*#region Contact Page*/
+
+
+
+
+
+/*#endregion*/
