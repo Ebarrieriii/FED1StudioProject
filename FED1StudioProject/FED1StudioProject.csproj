@@ -69,6 +69,9 @@
   <ItemGroup>
     <Content Include="css\custom.css" />
     <Content Include="contact.html" />
+    <Content Include="images\3464c39d9c_102102.png" />
+    <Content Include="images\christopher-gower-vjMgqUkS8q8-unsplash.jpg" />
+    <Content Include="images\devpost.png" />
     <Content Include="team.html" />
     <Content Include="classes.html" />
     <Content Include="index.html" />
@@ -86,6 +89,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
