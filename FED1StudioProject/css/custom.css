@@ -1,34 +1,116 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+body {
     width: 85%;
     margin: auto;
+    background-color: #ddd;
+    font-family: 'Handlee', cursive;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
+
+
+
+/*Imported Fonts*/
+
 
 /*
-    Colors:
-    rgb(163,48,53) brownish/red
-    rgb(73,72,70) grayish/blackish
-
+    font-family: 'Unica One', cursive;
 */
-/*#region nav*/
+/*#region main*/
 
-p.difficultP {
-    margin-left: 1em;
+
+
+.pull-right {
+    font-weight: bold;
+    color: black;
+    padding: 10px; /*add clickable area around the hamburger menu*/
+    text-decoration: none;
+    font-size: 2em;
+    float: right;
+    display: none;
 }
+.mainWrapper {
+    padding: 1em 1em 0 1em;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+footer {
+    padding: 1em;
+    border: 2px solid black;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 1em;
+}
+
+ul.footerul li {
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+}
+
+ul.footerul {
+    display: inline-block;
+    float: right;
+    margin: auto;
+    padding:.5em;
+}
+
+li.twitter img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+}
+
+li.github img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+}
+
+
+p.footer {
+   padding: .5em;
+   display: inline-block;
+}
+/*#endregion*/
+
+/*#region Navigation*/
 
 
 nav {
     border-top: 4px solid black;
+    background-color: rgb(181,226,255);
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+nav ul {
+    margin-bottom: 0;
 }
     nav ul li {
         display: inline-block;
+
     }
+
+
 
     nav a {
         text-decoration: none;
-        color: #fff;
+        color: black;
         font-weight:bold;
         font-size: 24px;
-        transition: .20s ease;
+        transition: .20s ease; 
     }
 
 nav ul li {
@@ -39,36 +121,459 @@ nav ul li {
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
-    background-color: rgb(115, 138, 219);
+    background-color: rgb(181,226,255);
 }
 
-.headerSection article h2, p {
-    display: inline-block;
+h1#navHeader {
+    font-size: 25px;
+    margin: 0;
+    padding: .7em;
+    display: none;
 }
 
-nav a:hover {
+nav ul li a:hover {
     font-size: 26px;
     letter-spacing: .1em;
-    color: #ddd;
+    color: white;
 }
 
 
+#headerOverlay {
+    background-image: url(/images/8d74f49598822ff69aebc8acf597b790-miami-buildings-silhouette.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 3% center;
+    padding: 2em;
+    background-color: rgb(181,226,255);
+    color: white;
+    margin-top: 2em;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+
+.margin {
+    margin: 7px 0 7px 175px;
+    padding-top: .50em;
+}
+body header div#headerOverlay h2, p {
+    margin: 7px 0 7px 175px;
+    color: black;
+    font-family: 'Unica One', cursive;
+}
+
+header h2 {
+    text-align: left;
+    letter-spacing: .1em;
+}
+.active {
+    letter-spacing: .05em;
+    font-size: 26px;
+    color: black;
+    text-decoration: underline;
+}
+
 /*#endregion*/
 
-/*#region index*/
-article.aboutSection h2, p {
+/*#region index.html*/
+
+div.chooseMe {
+    width: 80.34%;
+    margin: auto;
+}
+
+#mainColumn {
+    width: 85%;
+    margin: auto;
+}
+
+#handShake {
+    float: left;
+    height: 150px;
+    margin-right: 1.5em;
+}
+
+#laptopOther {
+    height: 250px;
+    float: right;
+    margin-left: 1em;
+}
+
+article#chooseUs h2, p {
+    text-align: left;
+    margin: 0;
+    padding-top: 1.5em;
+}
+
+article#chooseUsTwo h2, p {
+    text-align: left;
+    margin: 0;
+    padding-top: 1.5em;
+}
+
+article#aboutSection section h2 {
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+article#aboutSection section p {
+    padding-top: .75em;
+    text-align: left;
+}
+
+#laptopTable {
+    height: 250px;
+    float: left;
+    margin-right: 1em;
+}
+
+article#chooseUs section {
+    width: 85%;
+    margin: auto;
+}
+
+
+article#chooseUs {
+    height:250px;
+    width: 64.2%;
+    margin: auto;
+}
+
+article#chooseUsTwo {
+    height: 250px;
+    width: 64.2%;
+    margin: auto;
+}
+
+
+
+
+article#chooseUsTwo section {
+    height: 250px;
+    width: 85%;
+    margin: auto;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+
+article#chooseUs h1 {
+    font-size: 2em;
+    margin-bottom: .3em;
+}
+
+#section1 {
+    float: right;
+}
+/*#endregion*/
+
+/*#region CLASSES.HTML*/
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid black;
     display: inline-block;
-} 
+    width: 180px;
+    background-color: white;
+}
 
+/*div.galleryItem :hover {
+    border: 2px solid red;
+}*/
+
+div.galleryItem img {
+ width: 100%;
+ height: auto;
+}
+
+div.galleryItem div.description {
+    padding: 1em 5px;
+}
+
+#imageGallery {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+article#imageGallery h1 {
+    margin-top: 0;
+}
+
+article#imageGallery h1 {
+    font-size: 2em;
+    padding-top: 1em;
+    color: white;
+}
+
+/*Table CSS*/
+table, tr, td, th {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+td, th {
+    padding: .3em;
+}
+
+thead {
+    background-color: rgb(181,226,255);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+.background {
+    background-image: url(/images/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    background-size: cover;
+
+}
+/*#endregion*/
+
+
+/*#region TEAM*/
+.teamPicture {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+    border-radius: 100%;
+}
+
+article.team section {
+    margin: 0 auto 7em;
+    padding: 0 3em 0;
+}
+
+#rightColumn {
+    float: right;
+    width:15%;
+    margin: 0 auto;
+}
+
+#leftColumn {
+    width: 83%;
+    border-right: 2px solid black;
+}
+
+article.team h1 {
+   text-align: center;
+   font-size: 36px;
+   margin-top:0;
+   padding-top: 1em;
+}
+
+aside#rightColumn ul li {
+    line-height: 2.5;
+}
+
+.wrapper {
+    background-color: white;
+    height: 100%; 
+}
+
+#endSection {
+    margin-bottom: 0;
+    padding-bottom: 3em;
+}
+/*#endregion*/
+
+/*#region CONTACT*/
+ul.contactPage li {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    text-align: left;
+    list-style: none;
+    padding: 0.8em 0 0.8em 0;
+}
+
+article#contactP {
+    margin: auto;
+}
+
+ul.contactPage {
+    padding: 0;
+    margin-top: 0;
+    width: 48%;
+    margin: auto;
+}
+
+section.contactList h1 {
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+section.contactList {
+    margin-bottom: 10em;
+}
+/*#endregion*/
+
+#accordion {
+    margin-bottom: 2em;
+}
+
+/*#region media*/
+@media screen and (max-width: 1024px) {
+
+    nav ul {
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    div#headerOverlay {
+        padding: 1em;
+    }
+
+    .section1 {
+        display: block;
+        margin: 2em;
+        padding: 2em;
+        width: 100%;
+    }
+
+    /*.section2 {
+        display: block;
+        margin: auto;
+        padding: 2em;
+        width: 100% !important;
+    }*/
+
+    article#chooseUs section {
+        display: block;
+        margin: auto;
+        padding: 2em;
+        width: 100%;
+    }
+
+    article#chooseUs {
+        width: 40%;
+        float: left;
+    }
+
+    #laptopTable {
+        height: 200px;
+    } 
+    
+    #laptopOther {
+        height: 200px;
+    }
+
+        article#chooseUsTwo {
+            width: 40%;
+         
+        }
+
+        article#chooseUsTwo section {
+            width: 100%;
+            margin: auto;
+            height: 100%;
+        }
+
+
+    h1#special {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    article#chooseUsTwo h2, p {
+        text-align: center;
+        padding-left: 2em;
+    }
+
+    article#chooseUs h2, p {
+        padding-right: 2em;
+        text-align: center;
+    }
+
+    div.footer {
+        margin-top: 8em;
+    }
+
+    #imageGallery {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    article.team p {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    #rightColumn {
+        width: 20%;
+    }
+
+    #leftColumn {
+        width: 78%;
+    }
+
+    #teamFooter {
+        margin-top: 0;
+    }
+
+    
+}
 /*#endregion*/
 
 
 
 
-/*#region Contact Page*/
+@media screen and (max-width: 1519px)
+{
+    article#chooseUs section {
+        width: 100%;
+        margin: auto;
+    }
+
+    article#chooseUsTwo section {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*#endregion
 
 
+/*#region mobile*/
+@media screen and (max-width: 850px)
+{
 
+    div#headerOverlay {
+        display: none;
+    }
 
+    #navBar {
+        display: none;
+    }
+
+    h1#navHeader {
+        display: inline-block;
+    }
+
+    .pull-right {
+        display: inline-block;
+    }
+}
 
 /*#endregion*/

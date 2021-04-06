@@ -3,96 +3,333 @@
 <head>
     <meta charset="utf-8" />
     <title>Classes</title>
+    <link rel="shortcut icon" type="image/svg" href="images/favicon-16x16.png" />
+
+    <!-- jQuery CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css">
+
+    <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <section class="headerSection">
-
-            <article>
-                <!-- insert image here --> <img class="logo" src="/images/devpost.png" alt="Logo" width="120" height="120" />
-                <h2 class="difficult">Web Design</h2>
-                <p id="difficultP">Slogan</p>
-            </article>
-            <article>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/classes.html">Classes</a>
-                        </li>
-                        <li>
-                            <a href="/team.html">Team</a>
-                        </li>
-                        <li>
-                            <a href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
+        <div id="headerOverlay">
+            <h2>Modern Missouri</h2>
+            <p class="margin">"The real danger is not that computers will begin to think like men, but that men will begin to think like computers." - Sydney J. Harris</p>
+        </div>
     </header>
+
+    <section>
+        <article>
+
+            <nav>
+                <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+                    &#9776;
+                </a>
+                <ul id="nav-list">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/classes.html">Classes</a>
+                    </li>
+                    <li>
+                        <a href="/team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
     <main>
-        <h1>Class Subjects</h1>
-        <section>
-            <article>
-                <!-- Insert Picture -->
-                <h2>Class Topic</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pancetta meatloaf picanha bacon. Doner alcatra turkey beef bacon. Chicken bacon pork strip steak boudin.
-                </p>
-            </article>
+        <section class="wrapper">
+            <div class="background">
+                <article id="imageGallery">
+                    <h1>Class Subjects</h1>
+                    <div>
+                            <div class="galleryItem">
+                                <a href="images/olivier-collet-JMwCe3w7qKk-unsplash.jpg" target="_blank">
+                                    <img src="images/olivier-collet-JMwCe3w7qKk-unsplash.jpg" alt="guy sitting" width="600" height="400" />
+                                </a>
+                                <div class="description">Core Hardware Components</div>
+                            </div>
+                        <div class="galleryItem">
+                            <a href="images/pexels-brett-sayles-4339335.jpg" target="_blank">
+                                <img src="images/pexels-brett-sayles-4339335.jpg" alt="guy sitting" width="180" height="235" />
+                            </a>
+                            <div class="description">Operating <br />Systems</div>
+                        </div>
+                        <div class="galleryItem">
+                            <a href="images/pexels-thisisengineering-3861958.jpg" target="_blank">
+                                <img src="images/pexels-thisisengineering-3861958.jpg" alt="guy sitting" width="600" height="400" />
+                            </a>
+                            <div class="description">Software <br />Applications</div>
+                        </div>
+                        <div class="galleryItem">
+                            <a href="images/pexels-mati-mango-5952651.jpg" target="_blank">
+                                <img src="images/pexels-mati-mango-5952651.jpg" alt="guy sitting" width="600" height="400" />
+                            </a>
+                            <div class="description">Security <br />Threats</div>
+                        </div>
+                        <div class="galleryItem">
+                            <a href="images/balkouras-nicos-ncOQxZe8Krw-unsplash.jpg" target="_blank">
+                                <img src="images/balkouras-nicos-ncOQxZe8Krw-unsplash.jpg" alt="guy sitting" width="600" height="400" />
+                            </a>
+                            <div class="description">Configuring a Workstation</div>
+                        </div>
+                        <div class="galleryItem">
+                            <a href="images/pexels-keira-burton-6147050.jpg" target="_blank">
+                                <img src="images/pexels-keira-burton-6147050.jpg" alt="guy sitting" width="600" height="400" />
+                            </a>
+                            <div class="description">Safety <br />Concepts</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <h1 class="alignCenter">Class Dates</h1>
+            <div id="accordion">
+                <h3>Core Hardware Components</h3>
+                <div>
+                    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Length of Track</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>07/15/2021</td>
+                    <td>12/15/2021</td>
+                    <td>5 months</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>08/15/2021</td>
+                    <td>01/15/2022</td>
+                    <td>5 months</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>09/15/2021</td>
+                    <td>02/15/2022</td>
+                    <td>5 months</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-            <article>
-                <!-- Insert Picture -->
-                <h2>Class Topic</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pancetta meatloaf picanha bacon. Doner alcatra turkey beef bacon. Chicken bacon pork strip steak boudin.
-                </p>
-            </article>
+                </div>
+                <h3>Operating Systems</h3>
+                <div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Length of Track</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>07/15/2021</td>
+                                    <td>12/15/2021</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>08/15/2021</td>
+                                    <td>01/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>09/15/2021</td>
+                                    <td>02/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-            <article>
-                <!-- Insert Picture -->
-                <h2>Class Topic</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pancetta meatloaf picanha bacon. Doner alcatra turkey beef bacon. Chicken bacon pork strip steak boudin.
-                </p>
-            </article>
-            
-            <article>
-                <!-- Insert Picture -->
-                <h2>Class Topic</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pancetta meatloaf picanha bacon. Doner alcatra turkey beef bacon. Chicken bacon pork strip steak boudin.
-                </p>
-            </article>
-            
-            <article>
-                <!-- Insert Picture -->
-                <h2>Class Topic</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pancetta meatloaf picanha bacon. Doner alcatra turkey beef bacon. Chicken bacon pork strip steak boudin.
-                </p>
-            </article>
-            
-            <article>
-                <!-- Insert Picture -->
-                <h2>Class Topic</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pancetta meatloaf picanha bacon. Doner alcatra turkey beef bacon. Chicken bacon pork strip steak boudin.
-                </p>
-            </article>
-        </section>
+                </div>
+                <h3>Software Applications</h3>
+                <div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Length of Track</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>07/15/2021</td>
+                                    <td>12/15/2021</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>08/15/2021</td>
+                                    <td>01/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>09/15/2021</td>
+                                    <td>02/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-        <section>
-            <h1>Subject - Class List</h1>
-            <!-- Insert Table -->
+                </div>
+                <h3>Security Threats</h3>
+                <div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Length of Track</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>07/15/2021</td>
+                                    <td>12/15/2021</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>08/15/2021</td>
+                                    <td>01/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>09/15/2021</td>
+                                    <td>02/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <h3>Configuring a Workstation</h3>
+                <div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Length of Track</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>07/15/2021</td>
+                                    <td>12/15/2021</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>08/15/2021</td>
+                                    <td>01/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>09/15/2021</td>
+                                    <td>02/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <h3>Safety Concepts</h3>
+                <div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Length of Track</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>07/15/2021</td>
+                                    <td>12/15/2021</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>08/15/2021</td>
+                                    <td>01/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>09/15/2021</td>
+                                    <td>02/15/2022</td>
+                                    <td>5 months</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer>
+                <p class="footer">All Rights Reserved 2019</p>
+            </footer>
         </section>
     </main>
-    <footer>
-        <small>All Rights Reservered 2021</small>
-    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <!-- Link to jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Accordion function for fQuery UI -->
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    </script>
+
 </body>
 </html>

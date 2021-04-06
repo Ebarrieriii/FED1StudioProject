@@ -2,71 +2,95 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-
+    <link rel="shortcut icon" type="image/svg" href="images/favicon-16x16.png" />
     <link href="css/custom.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <section class="headerSection">
-            
-            <article>
-                <!-- insert image here --> <img class="logo" src="/images/devpost.png" alt="Logo" width="120" height="120" />
-                <h2 class="difficult">Web Design</h2>
-                <p id="difficultP">Slogan</p>
-            </article>
-            <article>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/classes.html">Classes</a>
-                        </li>
-                        <li>
-                            <a href="/team.html">Team</a>
-                        </li>
-                        <li>
-                            <a href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
+        <div id="headerOverlay">
+            <h2>Modern Missouri</h2>
+            <p class="margin">"The real danger is not that computers will begin to think like men, but that men will begin to think like computers." - Sydney J. Harris</p>
+        </div>
     </header>
 
-    <main>
+    <section>
+        <article>
+            <nav>
+                <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+                    &#9776;
+                </a>
 
-        <section>
-            <article class="aboutSection">
-                <!-- insert image here --> <img src="/images/3464c39d9c_102102.png" alt="Shaking Hands Logo" width="150" height="150" />
-                <h2>About Us</h2>
-                <p>
-                    Tongue frankfurter sirloin, chislic beef strip steak fatback ribeye chuck. Ball tip kevin prosciutto chislic. Buffalo short loin bacon pastrami drumstick shankle sausage salami corned beef boudin jerky sirloin chislic. Cupim ham pancetta flank. Hamburger flank pig jowl. Venison sirloin kielbasa, drumstick shoulder rump chislic jerky pork belly capicola cow. Bacon porchetta chislic ribeye ham hock drumstick ground round buffalo doner.
-                </p>
-            </article>
-            <article>
-                <h1>Why Choose Us</h1>
-                <!-- Insert Image here -->
-                <h2>Lorem</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pance
-                </p>
-                <!-- Insert button here -->
-            </article>
-            <article>
-                <h2>Lorem</h2>
-                <p>
-                    Spicy jalapeno bacon ipsum dolor amet filet mignon corned beef ribeye frankfurter pork loin, pork chop meatloaf tri-tip shoulder. Meatball pancetta ham brisket filet mignon. Sirloin buffalo doner, ribeye tri-tip pance
-                </p>
-                <!-- Insert Image here -->
-            </article>
+                <h1 id="navHeader">Modern Missouri</h1>
+                <ul id="navBar">
+                    <li>
+                        <a class="active" href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/classes.html">Classes</a>
+                    </li>
+                    <li>
+                        <a href="/team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
+    <main>
+        <section class="wrapper">
+            <section id="mainColumn" class="mainWrapper">
+                <article id="aboutSection">
+                    <section>
+                        <img src="images/3464c39d9c_102102.png" alt="handshake" id="handShake" />
+                        <h2>About Us</h2>
+                        <p>We are Modern Missouri, a trusted company for over 30 years to teach Kansas City about the fundamentals of technology! Our course goes over computer hardware, operating systems, software, security, configuring workstations, and safety! After our course you will be able to branch out your education, our goal is to get you fundamentally prepared to be working with tech!</p>
+                    </section>
+                </article>
+                <!--<div class="chooseMe">-->
+                <h1 class="alignCenter" id="special">Why Choose Us</h1>
+                <article id="chooseUs">
+
+
+                    <section class="section1">
+                        <img src="images/pexels-julia-m-cameron-4145354.jpg" alt="laptop on a table" id="laptopTable" />
+                        <div>
+                            <h2>Instructors with real world experience</h2>
+                            <p>All of our instructors have experience working in the field so they know what they teach in-depth from a professional stand point.</p>
+                        </div>
+                    </section>
+                </article>
+                <article id="chooseUsTwo">
+                    <section class="section2">
+                        <img src="images/pexels-katerina-holmes-5905709.jpg" alt="laptop on a table" id="laptopOther" />
+                        <div class="alignCenter">
+                            <h2>1 on 1 time</h2>
+                            <p>Our student:teacher ratio is 10:1. With small classes, you will be able to have closer relationships with your classmates and most importantly your instructors.</p>
+                        </div>
+                    </section>
+                </article>
+                <!--</div>-->
+            </section>
+
+
+            <div class="footer">
+                <footer>
+                    <p class="footer">All Rights Reserved 2019</p>
+                    <ul class="footerul">
+                        <li class="github"><a href="github.com" target="_blank"><img src="images/icons8-github-64.png" alt="github-logo" class="githubLogo" /></a></li>
+                        <li class="twitter"><a href="twitter.com" target="_blank"><img src="images/icons8-twitter-circled-50.png" alt="twitter-logo" class="twitterLogo" /></a></li>
+                    </ul>
+                </footer>
+            </div>
         </section>
+
     </main>
-    <footer>
-        <small>All Rights Reservered 2021</small>
-    </footer>
+
+
 </body>
 </html>
