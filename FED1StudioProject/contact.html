@@ -4,40 +4,46 @@
     <meta charset="utf-8" />
     <title>Contact</title>
     <link rel="shortcut icon" type="image/svg" href="images/favicon-16x16.png" />
-
     <link href="css/custom.css" rel="stylesheet" />
+    <script src="JS/js.js"></script>
 </head>
 <body>
-    <main>
-        <header>
-            <div id="headerOverlay">
-                <h2>Modern Missouri</h2>
-                <p class="margin">"The real danger is not that computers will begin to think like men, but that men will begin to think like computers." - Sydney J. Harris</p>
-            </div>
-        </header>
+    <header>
+        <div id="headerOverlay">
+            <h2>Modern Missouri</h2>
+            <p class="margin">"The real danger is not that computers will begin to think like men, but that men will begin to think like computers." - Sydney J. Harris</p>
+        </div>
+    </header>
 
-        <section>
-            <article>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/classes.html">Classes</a>
-                        </li>
-                        <li>
-                            <a href="/team.html">Team</a>
-                        </li>
-                        <li>
-                            <a class="active" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
+    <section>
+        <article>
+            <nav>
+                <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+                    &#9776;
+                </a>
+
+                <h1 id="navHeader">Modern Missouri</h1>
+                <ul id="navBar">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/classes.html">Classes</a>
+                    </li>
+                    <li>
+                        <a href="/team.html">Team</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+
+    <main>
         <section class="wrapper">
-            <section class="contactList">
+            <section class="contactList mainWrapper">
                 <h1>Contact Us</h1>
                 <article id="contactP">
                     <ul class="contactPage">
@@ -59,8 +65,8 @@
             </footer>
         </section>
 
-      
+
     </main>
-    
+
 </body>
 </html>
