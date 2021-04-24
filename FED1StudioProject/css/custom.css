@@ -1,11 +1,12 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&display=swap');
 
 
 body {
-    width: 85%;
+    width: 95%;
     margin: auto;
     background-color: #ddd;
-    font-family: 'Handlee', cursive;
+    font-family: 'EB Garamond', serif;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
     background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -23,7 +24,9 @@ body {
 */
 /*#region main*/
 
-
+p {
+    font-size: 1.2em;
+}
 
 .pull-right {
     font-weight: bold;
@@ -34,6 +37,7 @@ body {
     float: right;
     display: none;
 }
+
 .mainWrapper {
     padding: 1em 1em 0 1em;
 }
@@ -47,7 +51,6 @@ body {
 }
 
 footer {
-    padding: 1em;
     border: 2px solid black;
     margin: auto;
     width: 85%;
@@ -64,27 +67,24 @@ ul.footerul {
     display: inline-block;
     float: right;
     margin: auto;
-    padding:.5em;
+    padding: .5em;
 }
 
-li.twitter img {
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    padding: 5px;
-}
+    ul.footerul img {
+        padding-top: .5em;
+    }
 
-li.github img {
-    width: 30px;
-    height: 30px;
-    margin: auto;
-    padding: 5px;
-}
+
 
 
 p.footer {
-   padding: .5em;
-   display: inline-block;
+    padding: .5em;
+    display: inline-block;
+}
+
+div.footer img {
+    width: 30px;
+    height: 30px;
 }
 
 .clear {
@@ -103,22 +103,23 @@ nav {
     border-bottom: 3px solid black;
 }
 
-nav ul {
-    margin-bottom: 0;
-}
-    nav ul li {
-        display: inline-block;
-        padding: 1em;
+    nav ul {
+        margin-bottom: 0;
     }
+
+        nav ul li {
+            display: inline-block;
+            padding: 1em;
+        }
 
 
 
     nav a {
         text-decoration: none;
         color: black;
-        font-weight:bold;
+        font-weight: bold;
         font-size: 24px;
-        transition: .20s ease; 
+        transition: .20s ease;
     }
 
 .headerSection {
@@ -161,16 +162,23 @@ nav ul li a:hover {
     margin: 7px 0 7px 175px;
     padding-top: .50em;
 }
-body header div#headerOverlay h2, p {
+
+body header div#headerOverlay h2, div#headerOverlay p {
     margin: 7px 0 7px 175px;
     color: black;
-    font-family: 'Unica One', cursive;
+    font-family: 'EB Garamond', serif;
 }
 
 header h2 {
+    font-size: 30px;
     text-align: left;
     letter-spacing: .1em;
 }
+
+header p {
+    font-size: 1.1em;
+}
+
 .active {
     letter-spacing: .05em;
     font-size: 26px;
@@ -178,17 +186,70 @@ header h2 {
     text-decoration: underline;
 }
 
+div.logoSection ul {
+    list-style-type: none;
+}
+
+    div.logoSection ul li {
+        float: right;
+    }
+
+        div.logoSection ul li a {
+            display: block;
+        }
+
+div.logoSection {
+    margin-right: 1em;
+}
+
+    div.logoSection img {
+        margin-top: .5em;
+        width: 30px;
+        height: 30px;
+    }
+
+
+
 /*#endregion*/
 
 /*#region index.html*/
 
-div.chooseMe {
-    width: 80.34%;
+div.wrap {
+    width: 54.8%;
     margin: auto;
 }
 
+img.pic1 {
+    float: left;
+    margin-right: 2em;
+}
+
+div.topSection p, div.topSection h2 {
+    text-align: center;
+    margin: 0;
+}
+
+div.bottomSection p, div.bottomSection h2 {
+    text-align: center;
+    margin: 0;
+}
+
+div.bottomSection h2, div.topSection h2 {
+    padding-top: 1em;
+}
+
+
+img.pic2 {
+    float: right;
+    margin-left: 2em;
+}
+
+div.topSection {
+    display: inline-block;
+}
+
 #mainColumn {
-    width: 85%;
+    width: 76%;
     margin: auto;
 }
 
@@ -196,24 +257,6 @@ div.chooseMe {
     float: left;
     height: 150px;
     margin-right: 1.5em;
-}
-
-#laptopOther {
-    height: 250px;
-    float: right;
-    margin-left: 1em;
-}
-
-article#chooseUs h2, p {
-    text-align: left;
-    margin: 0;
-    padding-top: 1.5em;
-}
-
-article#chooseUsTwo h2, p {
-    text-align: left;
-    margin: 0;
-    padding-top: 1.5em;
 }
 
 article#aboutSection section h2 {
@@ -226,45 +269,13 @@ article#aboutSection section p {
     text-align: left;
 }
 
-#laptopTable {
-    height: 250px;
-    float: left;
-    margin-right: 1em;
-}
-
-article#chooseUs section {
-    width: 85%;
-    margin: auto;
-}
-
-
-article#chooseUs {
-    width: 64.2%;
-    margin: auto;
-}
-
-article#chooseUsTwo {
-    width: 64.2%;
-    margin: auto;
-}
-
-
-
-
-article#chooseUsTwo section {
-    width: 85%;
-    margin: auto;
-    padding-bottom: 1em;
-    margin-bottom: 0;
-}
-
-article#chooseUs h1 {
-    font-size: 2em;
-    margin-bottom: .3em;
-}
-
 #section1 {
     float: right;
+}
+
+h3#special {
+    margin: 2em 0;
+    font-size: 1.8em;
 }
 /*#endregion*/
 
@@ -279,23 +290,26 @@ div.galleryItem {
     vertical-align: bottom;
 }
 
-div.galleryItem:hover {
-    border: 2px solid red;
-}
+    div.galleryItem:hover {
+        border: 2px solid rgb(181,226,255);
+        cursor: pointer;
+        transition: .2s;
+    }
 
-div.galleryItem img {
- width: 100%;
- height: auto;
-}
+    div.galleryItem img {
+        width: 100%;
+        height: auto;
+    }
 
-div.galleryItem div.description {
-    padding: 1em 5px;
-}
+    div.galleryItem div.description {
+        padding: 1em 5px;
+    }
 
 #imageGallery {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 2em;
 }
 
 article#imageGallery h1 {
@@ -341,9 +355,7 @@ tbody tr:nth-child(even) {
     background-image: url(/images/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 700px;
     background-size: cover;
-
 }
 /*#endregion*/
 
@@ -354,17 +366,22 @@ tbody tr:nth-child(even) {
     width: 200px;
     float: left;
     margin-right: 50px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
+
 article.team section {
-    margin: 0 auto 7em;
+    margin: 0 auto 0;
     padding: 0 3em 0;
+}
+
+article.team p {
+    font-size: 1.3em;
 }
 
 #rightColumn {
     float: right;
-    width:15%;
+    width: 15%;
     margin: 0 auto;
 }
 
@@ -374,24 +391,50 @@ article.team section {
 }
 
 article.team h1 {
-   text-align: center;
-   font-size: 36px;
-   margin-top:0;
-   padding-top: 1em;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+    padding-top: 1em;
 }
 
 aside#rightColumn ul li {
     line-height: 2.5;
 }
 
+    aside#rightColumn ul li a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        aside#rightColumn ul li a:hover {
+            font-size: 19px;
+            letter-spacing: .1em;
+            color: black;
+        }
+
+aside#rightColumn ul {
+    list-style-type: none;
+}
+
+
+
 .wrapper {
     background-color: white;
-    height: 100%; 
+    height: 100%;
 }
 
 #endSection {
     margin-bottom: 0;
     padding-bottom: 3em;
+}
+
+section#leftColumn article section {
+    margin-bottom: 10em;
+}
+
+.backToTop {
+    text-align: center !important;
+    margin: auto;
 }
 /*#endregion*/
 
@@ -476,16 +519,15 @@ section.contactList {
 
     #laptopTable {
         height: 200px;
-    } 
-    
+    }
+
     #laptopOther {
         height: 200px;
     }
 
-        article#chooseUsTwo {
-            width: 40%;
-         
-        }
+    article#chooseUsTwo {
+        width: 40%;
+    }
 
         article#chooseUsTwo section {
             width: 100%;
@@ -494,7 +536,7 @@ section.contactList {
         }
 
 
-    h1#special {
+    h3#special {
         font-size: 1.5em;
         margin-bottom: .3em;
     }
@@ -534,16 +576,13 @@ section.contactList {
     #teamFooter {
         margin-top: 0;
     }
-
-    
 }
 /*#endregion*/
 
 
 
 
-@media screen and (max-width: 1519px)
-{
+@media screen and (max-width: 1519px) {
     article#chooseUs section {
         width: 100%;
         margin: auto;
@@ -555,28 +594,25 @@ section.contactList {
     }
 }
 
+
 /*#endregion*/
-    @media screen and (max-width: 1220px)
-    {
+@media screen and (max-width: 1220px) {
 
-        #laptopTable, #laptopOther {
-            float: none;
-            margin: auto;
-            text-align: center;
-        }
+    #laptopTable, #laptopOther {
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
 
-        article#chooseUs h2, article#chooseUs p {
-            text-align: center;
-        }
-
-
-        article#chooseUs {
-            margin: auto;
-        }
+    article#chooseUs h2, article#chooseUs p {
+        text-align: center;
+    }
 
 
-
-    } 
+    article#chooseUs {
+        margin: auto;
+    }
+}
 
 
 /*#region*/
@@ -585,11 +621,14 @@ section.contactList {
 /*#endregion*/
 
 /*#region mobile*/
-@media screen and (max-width: 850px)
-{
+@media screen and (max-width: 850px) {
 
     body {
         width: 100%;
+    }
+
+    .logoSection {
+        display: none;
     }
 
     div#headerOverlay {
@@ -598,37 +637,36 @@ section.contactList {
 
     #navBar {
         display: none;
-        transition: transform .75s ease-in-out;
     }
 
         #navBar.expanded {
             display: block;
         }
 
-        #navBar.expanded li {
-            display: block;
-            padding: 0;
-        }
-
-        #navBar.expanded li:hover {
-            background-color: #192841;
-            transition: .20s ease;
-        }
-
-            #navBar.expanded li a {
+            #navBar.expanded li {
                 display: block;
-                height: 2em;
-                padding-top: .8em;
+                padding: 0;
             }
 
-                
-
-
-
-                h1#navHeader {
-                    display: inline-block;
-                    text-align: center;
+                #navBar.expanded li:hover {
+                    background-color: #192841;
+                    transition: .20s ease;
                 }
+
+                #navBar.expanded li a {
+                    display: block;
+                    height: 2em;
+                    padding-top: .8em;
+                }
+
+
+
+
+
+    h1#navHeader {
+        display: inline-block;
+        text-align: center;
+    }
 
     .pull-right {
         display: inline-block;
@@ -648,6 +686,18 @@ section.contactList {
         text-align: center;
     }
 
+    img.pic1, img.pic2 {
+        float: none;
+        margin: 0;
+    }
+
+    div.topSection h2, div.topSection p, div.bottomSection p, div.bottomSection h2 {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
 }
+
+
 
 /*#endregion*/
