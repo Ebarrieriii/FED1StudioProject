@@ -70,8 +70,9 @@ ul.footerul {
     padding: .5em;
 }
 
-    ul.footerul img {
-        padding-top: .5em;
+    ul.footerul i {
+        color: black;
+        padding: 1.2em .2em 0 .2em;
     }
 
 
@@ -194,18 +195,19 @@ div.logoSection ul {
         float: right;
     }
 
-        div.logoSection ul li a {
-            display: block;
-        }
+.logoSection a i{
+    text-decoration: none;
+}
+
 
 div.logoSection {
     margin-right: 1em;
 }
 
-    div.logoSection img {
-        margin-top: .5em;
-        width: 30px;
-        height: 30px;
+    div.logoSection i {
+        margin-top: 1em;
+        color: black;
+        padding: 0 .2em;
     }
 
 
